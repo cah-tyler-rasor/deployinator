@@ -10,7 +10,7 @@
 
 #!/usr/bin/env bash
 
-cd ~/deployinator
+cd /home/pi/deployinator
 git pull
 
 sudo mv ./startup_scripts/auto_start.sh /etc/init.d/auto_start.sh
