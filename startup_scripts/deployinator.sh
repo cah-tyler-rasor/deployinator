@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 # start the python scripts here
-./blink_lights.py
+./utils/emergency_stop.py &
+./blink_lights.py &
