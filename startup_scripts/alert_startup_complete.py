@@ -5,8 +5,8 @@ import time
 
 led = LED(23)
 
-for _ in range(5):
+for _ in range(3):
     led.on()
-    time.sleep(0.1)
+    time.sleep(0.2)
     led.off()
-    time.sleep(0.1)
+    time.sleep(0.2)
