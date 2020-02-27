@@ -3,7 +3,7 @@ Description=something to do the boot stuff
 After=multi-user.target
 
 [Service]
-Type=idle
+Type=forking
 ExecStart=/home/pi/deployinator/startup_scripts/auto_start.sh
 
 [Install]
