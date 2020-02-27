@@ -1,6 +1,6 @@
 ### BEGIN INIT INFO
 # Provides:          auto_start.sh
-# Required-Start:    $all
+# Required-Start:    $remote_fs $syslog
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
@@ -15,4 +15,5 @@ git pull
 
 sudo cp ./startup_scripts/auto_start.sh /etc/init.d/auto_start.sh
 
-./startup_scripts/deployinator.sh
+./startup_scripts/alert_startup_complete.py
+./startup_scripts/deployinator.sh &
