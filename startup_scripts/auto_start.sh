@@ -13,6 +13,6 @@
 cd /home/pi/deployinator
 git pull
 
-sudo mv ./startup_scripts/auto_start.sh /etc/init.d/auto_start.sh
+sudo cp ./startup_scripts/auto_start.sh /etc/init.d/auto_start.sh
 
 ./startup_scripts/deployinator.sh
