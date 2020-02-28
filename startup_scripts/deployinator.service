@@ -7,4 +7,4 @@ Type=forking
 ExecStart=/home/pi/deployinator/startup_scripts/auto_start.sh
 
 [Install]
-WantedBy=multi-user.tar
+WantedBy=multi-user.target
